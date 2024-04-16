@@ -1,4 +1,4 @@
-pipleine{
+pipline{
     agent any
 
     stages{
