@@ -1,3 +1,4 @@
+import org.jenkinsci.plugins.pipeline.modeldefinition.Utils
 node(){
     
         stage("builds"){
@@ -9,7 +10,7 @@ node(){
              {echo "mhhhhmmaa"
              }
           else
-          {Utils.markStageSkippedForConditional('test')
+          {Utils.markStageSkippedForConditional("test")
           }
              
          }
