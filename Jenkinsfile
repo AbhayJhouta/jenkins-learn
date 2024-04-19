@@ -4,11 +4,11 @@ pipeline{
     stages{
         stage("builds"){
         steps {
-         ls
+         echo "naa"
          }
          }
          stage("test"){
-          if (a==False)
+          if (true)
              {echo "naa"
              }
           else
