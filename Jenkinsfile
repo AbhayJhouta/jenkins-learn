@@ -1,16 +1,19 @@
 pipeline{
     agent any
-
+    def a=False
     stages{
         stage("builds"){
         steps {
-         echo "building applications "
+         ls
          }
          }
          stage("test"){
-          steps {
-          echo "testing applications "
-         }
+          if (a==False)
+             {echo "naa"
+             }
+          else
+          {Utils.markStageSkippedForConditional('mystage')
+          }
          }
     }
 
