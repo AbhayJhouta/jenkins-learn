@@ -1,6 +1,6 @@
 import org.jenkinsci.plugins.pipeline.modeldefinition.Utils
 node(){
-        nade=false
+        nade=true
         stage("builds"){
          echo "naa"
          }
