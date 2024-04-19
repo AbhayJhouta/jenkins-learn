@@ -8,7 +8,7 @@ node(){
              {echo "naa"
              }
           else
-          {Utils.markStageSkippedForConditional('mystage')
+          {Utils.markStageSkippedForConditional('test')
           }
          }
 }
