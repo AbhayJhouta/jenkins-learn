@@ -1,11 +1,7 @@
-pipeline{
-    agent any
-    def a=False
-    stages{
+node(){
+    
         stage("builds"){
-        steps {
          echo "naa"
-         }
          }
          stage("test"){
           if (true)
@@ -15,6 +11,4 @@ pipeline{
           {Utils.markStageSkippedForConditional('mystage')
           }
          }
-    }
-
 }
