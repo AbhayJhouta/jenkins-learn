@@ -5,12 +5,14 @@ node(){
          }
          stage("test"){
           catchError(buildResult: 'FAILURE', stageResult: 'FAILURE')
+             {
           if (false)
              {echo "mhhhhmmaa"
              }
           else
           {Utils.markStageSkippedForConditional('test')
           }
+             }
          }
 
         stage("ssddd"){
