@@ -4,7 +4,7 @@ node(){
          echo "naa"
          }
          stage("test"){
-          if (true)
+          if (false)
              {echo "naa"
              }
           else
